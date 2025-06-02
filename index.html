@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenPoints - My Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f9f5;
+      color: #333;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #1b5e20;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .dashboard, .history, .achievements, .reminder, .eco-fact, .leaderboard {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .dashboard h2, .history h2, .achievements h2, .reminder h2, .eco-fact h2, .leaderboard h2 {
+      margin-top: 0;
+    }
+    .progress-stats {
+      display: flex;
+      justify-content: space-around;
+      font-size: 1.1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    .achievements ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .achievements li {
+      padding: 0.5rem 0;
+    }
+    .reminder p, .eco-fact p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0 0;
+    }
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome, Rahul S.</h1>
+    <p>Your GreenPoints Dashboard</p>
+  </header>
+
+  <nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Submit Waste</a>
+    <a href="#">Leaderboard</a>
+    <a href="#">Schedule</a>
+    <a href="#">Logout</a>
+  </nav>
+
+  <section class="dashboard">
+    <h2>Your Progress</h2>
+    <div class="progress-stats">
+      <div><strong>Total Waste Collected:</strong> 13.5 kg</div>
+      <div><strong>Submissions:</strong> 6</div>
+      <div><strong>Total Points:</strong> 135 pts</div>
+    </div>
+  </section>
+
+  <section class="history">
+    <h2>Your Submission History</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Weight (kg)</th>
+          <th>Points Earned</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-05-05</td>
+          <td>2.3</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>2025-05-12</td>
+          <td>1.9</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>2025-05-19</td>
+          <td>3.1</td>
+          <td>31</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="achievements">
+    <h2>Your Achievements</h2>
+    <ul>
+      <li>🏁 <strong>First Submission</strong> unlocked!</li>
+      <li>🔥 <strong>3-Week Streak</strong> – Keep it up!</li>
+      <li>🎯 <strong>Over 10 kg Collected</strong></li>
+    </ul>
+  </section>
+
+  <section class="reminder">
+    <h2>Next Collection Slot</h2>
+    <p>📆 <strong>Thursday, June 6th</strong> between <strong>4 PM – 6 PM</strong> at Hostel Collection Center</p>
+  </section>
+
+  <section class="eco-fact">
+    <h2>Did You Know?</h2>
+    <p>🌱 Recycling one plastic bottle saves enough energy to power a 60-watt light bulb for 3 hours!</p>
+  </section>
+
+  <section class="leaderboard">
+    <h2>Top Waste Recyclers</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Student</th>
+          <th>Total Waste (kg)</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Aditi M.</td>
+          <td>15.2</td>
+          <td>152</td>
+        </tr>
+        <tr style="background-color: #e8f5e9;">
+          <td>2</td>
+          <td><strong>Rahul S.</strong></td>
+          <td>13.5</td>
+          <td>135</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Neha K.</td>
+          <td>12.9</td>
+          <td>129</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GreenPoints Initiative | NIT Calicut</p>
+  </footer>
+
+</body>
+</html>
